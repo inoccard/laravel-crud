@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Envie seu formulário</div>
-
                 <div class="card-body">
                 <?php
                 echo Form::open(array('url' => 'foo/bar'));
