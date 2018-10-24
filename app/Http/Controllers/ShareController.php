@@ -59,7 +59,7 @@ class ShareController extends Controller
             'share_qty' => $request->get('share_qty')
         ]);
         $share->save();
-        return redirect('/shares')->with('success', 'Stock has been added');
+        return redirect('/shares')->with('success', 'Estoque adicionado.');
     }
 
     /**
@@ -107,7 +107,7 @@ class ShareController extends Controller
         $share->share_qty = $request->get('share_qty');
         $share->save();
 
-        return redirect('/shares')->with('success', 'Stock has been updated');
+        return redirect('/shares')->with('success', 'Estoque Atualizado.');
     }
 
     /**

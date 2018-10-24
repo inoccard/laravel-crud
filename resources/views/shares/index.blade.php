@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.lshare')
 
 @section('content')
 <style>
@@ -15,11 +15,12 @@
   <table class="table table-striped">
     <thead>
         <tr>
-          <td>ID</td>
-          <td>Stock Name</td>
-          <td>Stock Price</td>
-          <td>Stock Quantity</td>
-          <td colspan="2">Action</td>
+          <th>ID</th>
+          <th>Nome do Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Editar</th>
+          <th>Excluir</th>
         </tr>
     </thead>
     <tbody>
@@ -29,12 +30,12 @@
             <td>{{$share->share_name}}</td>
             <td>{{$share->share_price}}</td>
             <td>{{$share->share_qty}}</td>
-            <td><a href="{{ route('shares.edit',$share->id)}}" class="btn btn-primary">Edit</a></td>
+            <td><a href="{{ route('shares.edit',$share->id)}}" class="btn btn-primary">Editar</a></td>
             <td>
                 <form action="{{ route('shares.destroy', $share->id)}}" method="post">
                   @csrf
                   @method('DELETE')
-                  <button class="btn btn-danger" type="submit">Delete</button>
+                  <button class="btn btn-danger" type="submit">Excluir</button>
                 </form>
             </td>
         </tr>
