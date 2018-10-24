@@ -20,7 +20,7 @@
           <th>Preço</th>
           <th>Quantidade</th>
           <th>Editar</th>
-          <th>Excluir</th>
+          <td>Excluir</td>
         </tr>
     </thead>
     <tbody>
