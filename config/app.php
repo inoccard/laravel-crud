@@ -146,7 +146,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Illuminate\html\HtmlServiceProvider::class,
+        Collective\html\HtmlServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -208,7 +208,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Form' => Illuminate\html\FormFacade::class,
-        'Html' => Illuminate\html\HtmlFacade::class,
+        'Form' => Collective\html\FormFacade::class,
+        'Html' => Collective\html\HtmlFacade::class,
     ],
 ];
