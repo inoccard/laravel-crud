@@ -107,7 +107,7 @@ class ShareController extends Controller
         $share->share_qty = $request->get('share_qty');
         $share->save();
 
-        return redirect('/shares')->with('success', 'Estoque Atualizado.');
+        return redirect('/shares')->with('success', 'Estoque Atualizado');
     }
 
     /**
