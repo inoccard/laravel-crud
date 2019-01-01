@@ -12,6 +12,7 @@
       {{ session()->get('success') }}  
     </div><br />
   @endif
+  <div><a class="btn" href="{{route('shares.create')}}">Adicionar novo item</a></div>
   <table class="table table-striped">
     <thead>
         <tr>
