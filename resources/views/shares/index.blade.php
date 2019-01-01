@@ -21,7 +21,7 @@
           <th>Preço</th>
           <th>Quantidade</th>
           <th>Editar</th>
-          <td>Excluir</td>
+          <th>Excluir</th>
         </tr>
     </thead>
     <tbody>
