@@ -13,6 +13,10 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        /*
+        | protege o homeController de emais não confirmados
+        |
+        */
         $this->middleware(['auth', 'verified']);
     }
 
