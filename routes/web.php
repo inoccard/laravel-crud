@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::resource('shares', "ShareController");
 
+/**
+| Adiciona verificação de e-mail
+| Habilita o novo controlador de verificação com as ações de rota
+*/
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
